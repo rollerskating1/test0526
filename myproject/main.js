@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+﻿const { app, BrowserWindow } = require('electron')
 const isDev = require('electron-is-dev')
 let mainWindow;
 
@@ -17,3 +17,4 @@ app.on('ready', () => {
   const urlLoaction = isDev ? 'http://localhost:3000' : 'dummyurl'
   mainWindow.loadURL(urlLoaction)
 })
+c
