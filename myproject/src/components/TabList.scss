@@ -1,0 +1,33 @@
+.tablist-component{
+  // 普通情况下，小图标隐藏
+  .close-icon{
+    visibility: hidden;
+  }
+  // 当光标放上去，小图标出现
+  .nav-link:hover .close-icon{
+    visibility: visible;
+  }
+  // 如果是高亮状态，则小图标一直出现
+  .nav-link.active .close-icon{
+      visibility: visible;
+  }
+}
+
+.unsaved-icon {
+  display: inline-block;
+  background: #d9534f;
+  width: 11px;
+  height: 11px;
+}
+// 当文件未保存的时候，小x不显示
+.withUnsaved.nav-link .close-icon{
+    display: none;
+}
+// 当光标放上去的时候，小x显示
+.withUnsaved.nav-link:hover .close-icon{
+  display: inline-block;
+}
+// 当光标放上去的时候，小红点不显示
+.withUnsaved.nav-link:hover .unsaved-icon{
+  display: none;
+}

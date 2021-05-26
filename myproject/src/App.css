@@ -1,0 +1,32 @@
+.icon-button{
+  background: none;
+  border: none;
+  color: inherit;
+}
+.start-page{
+  font-size: 30px;
+  height: 300px;
+  line-height: 300px;
+  color: #ccc;
+  text-align: center;
+}
+.left-panel{
+  min-height: 100vh;
+  position: relative;
+}
+.button-group{
+  position: fixed;
+  width: 25%;
+  bottom: 0;
+}
+.no-border{
+  border-radius: 0 !important;
+}
+.btn-red{
+  background-color: red !important;
+  color: white !important;
+}
+.btn-success{
+  font-size: 15px !important;
+  line-height: 24px !important;
+}
